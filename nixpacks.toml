@@ -1,8 +1,0 @@
-[phases.setup]
-nixPkgs = ["python313", "ffmpeg"]
-
-[phases.install]
-cmds = ["pip install --no-cache-dir python-telegram-bot==20.7 yt-dlp requests"]
-
-[start]
-cmd = "python bot.py"
