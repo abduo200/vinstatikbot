@@ -1,16 +1,15 @@
-import os, requests, logging
+import os, requests
 import yt_dlp
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Updater, CommandHandler, MessageHandler, CallbackQueryHandler, Filters
+from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
 
-logging.basicConfig(level=logging.INFO)
 TOKEN = "8691344282:AAGM2VykrOhl48bpH48qgZ2Y1y4_QwNDUxw"
 DOWNLOAD_DIR = "/app/downloads"
 os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 user_urls = {}
 
-def start(update, context):
-    update.message.reply_text("مرحبا! ارسل رابط فيديو")
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text("مرحبا! ارسل رابط فيديو")
 
 def download_tiktok(url):
     try:
@@ -25,35 +24,35 @@ def download_tiktok(url):
         pass
     return None, None
 
-def handle_url(update, context):
+async def handle_url(update: Update, context: ContextTypes.DEFAULT_TYPE):
     url = update.message.text.strip()
     if not url.startswith("http"):
-        update.message.reply_text("ارسل رابط صحيح")
+        await update.message.reply_text("ارسل رابط صحيح")
         return
     user_urls[update.effective_user.id] = url
     if "tiktok.com" in url:
-        msg = update.message.reply_text("كنحمل...")
+        msg = await update.message.reply_text("كنحمل...")
         path, title = download_tiktok(url)
         if path:
             with open(path, "rb") as f:
-                update.message.reply_video(video=f, caption=title)
+                await update.message.reply_video(video=f, caption=title)
             os.remove(path)
-            msg.delete()
+            await msg.delete()
         else:
-            msg.edit_text("فشل")
+            await msg.edit_text("فشل")
         return
     keyboard = [[InlineKeyboardButton("720p", callback_data="video_720"), InlineKeyboardButton("MP3", callback_data="audio_mp3")]]
-    update.message.reply_text("شنو تبغي؟", reply_markup=InlineKeyboardMarkup(keyboard))
+    await update.message.reply_text("شنو تبغي؟", reply_markup=InlineKeyboardMarkup(keyboard))
 
-def handle_choice(update, context):
+async def handle_choice(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
-    query.answer()
+    await query.answer()
     url = user_urls.get(query.from_user.id)
     if not url:
-        query.edit_message_text("ارسل الرابط")
+        await query.edit_message_text("ارسل الرابط")
         return
-    query.edit_message_text("كنحمل...")
     choice = query.data
+    await query.edit_message_text("كنحمل...")
     if choice == "audio_mp3":
         ydl_opts = {"format": "bestaudio/best", "outtmpl": f"{DOWNLOAD_DIR}/%(id)s.%(ext)s", "postprocessors": [{"key": "FFmpegExtractAudio", "preferredcodec": "mp3"}], "quiet": True}
     else:
@@ -66,19 +65,17 @@ def handle_choice(update, context):
                 fp = os.path.splitext(fp)[0] + ".mp3"
         with open(fp, "rb") as f:
             if choice == "audio_mp3":
-                query.message.reply_audio(audio=f, title=info.get("title","audio"))
+                await query.message.reply_audio(audio=f, title=info.get("title","audio"))
             else:
-                query.message.reply_video(video=f, caption=info.get("title","video"))
+                await query.message.reply_video(video=f, caption=info.get("title","video"))
         os.remove(fp)
-        query.delete_message()
+        await query.delete_message()
     except Exception as e:
-        query.edit_message_text(f"خطا: {str(e)[:200]}")
+        await query.edit_message_text(f"خطا: {str(e)[:200]}")
 
-updater = Updater(TOKEN)
-dp = updater.dispatcher
-dp.add_handler(CommandHandler("start", start))
-dp.add_handler(MessageHandler(Filters.text & ~Filters.command, handle_url))
-dp.add_handler(CallbackQueryHandler(handle_choice))
+app = ApplicationBuilder().token(TOKEN).build()
+app.add_handler(CommandHandler("start", start))
+app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_url))
+app.add_handler(CallbackQueryHandler(handle_choice))
 print("البوت شغال")
-updater.start_polling()
-updater.idle()
+app.run_polling()
