@@ -1,0 +1,18 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.14.1
+2 info using node@v24.14.1
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm cache clean
+7 verbose argv "cache" "clean" "--force"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2026-05-17T14_49_39_547Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2026-05-17T14_49_39_547Z-debug-0.log
+10 warn using --force Recommended protections disabled.
+11 silly logfile done cleaning log files
+12 verbose cwd /data/data/com.termux/files/home
+13 verbose os Linux 6.6.89-android15-8-g8e4be6b47e40-ab14134548-4k
+14 verbose node v24.14.1
+15 verbose npm  v11.14.1
+16 verbose exit 0
+17 info ok

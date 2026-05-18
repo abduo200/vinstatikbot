@@ -1,0 +1,209 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.14.1
+2 info using node@v24.14.1
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm install code-server
+7 verbose argv "install" "--global" "code-server"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2026-05-17T14_44_35_519Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2026-05-17T14_44_35_519Z-debug-0.log
+10 silly packumentCache heap:1174405120 maxSize:293601280 maxEntrySize:146800640
+11 silly logfile done cleaning log files
+12 silly idealTree buildDeps
+13 silly fetch manifest code-server@*
+14 silly packumentCache full:https://registry.npmjs.org/code-server cache-miss
+15 http cache https://registry.npmjs.org/code-server 76ms (cache hit)
+16 silly packumentCache full:https://registry.npmjs.org/code-server set size:2462789 disposed:false
+17 silly placeDep ROOT code-server@4.3.0 OK for:  want: *
+18 silly fetch manifest qs@6.10.3
+19 silly packumentCache full:https://registry.npmjs.org/qs cache-miss
+20 silly fetch manifest ws@^8.0.0
+21 silly packumentCache full:https://registry.npmjs.org/ws cache-miss
+22 silly fetch manifest pem@^1.14.2
+23 silly packumentCache full:https://registry.npmjs.org/pem cache-miss
+24 http cache https://registry.npmjs.org/ws 21ms (cache hit)
+25 silly packumentCache full:https://registry.npmjs.org/ws set size:418167 disposed:false
+26 silly fetch manifest yarn@^1.22.4
+27 silly packumentCache full:https://registry.npmjs.org/yarn cache-miss
+28 http cache https://registry.npmjs.org/pem 33ms (cache hit)
+29 silly packumentCache full:https://registry.npmjs.org/pem set size:157263 disposed:false
+30 silly fetch manifest argon2@^0.28.0
+31 silly packumentCache full:https://registry.npmjs.org/argon2 cache-miss
+32 http cache https://registry.npmjs.org/qs 41ms (cache hit)
+33 silly packumentCache full:https://registry.npmjs.org/qs set size:356906 disposed:false
+34 silly fetch manifest semver@^7.1.3
+35 silly packumentCache full:https://registry.npmjs.org/semver cache-miss
+36 http cache https://registry.npmjs.org/argon2 30ms (cache hit)
+37 silly packumentCache full:https://registry.npmjs.org/argon2 set size:245297 disposed:false
+38 silly fetch manifest split2@^4.0.0
+39 silly packumentCache full:https://registry.npmjs.org/split2 cache-miss
+40 http cache https://registry.npmjs.org/yarn 49ms (cache hit)
+41 silly packumentCache full:https://registry.npmjs.org/yarn set size:432480 disposed:false
+42 silly fetch manifest express@5.0.0-alpha.8
+43 silly packumentCache full:https://registry.npmjs.org/express cache-miss
+44 http cache https://registry.npmjs.org/semver 44ms (cache hit)
+45 silly packumentCache full:https://registry.npmjs.org/semver set size:233058 disposed:false
+46 silly fetch manifest js-yaml@^4.0.0
+47 silly packumentCache full:https://registry.npmjs.org/js-yaml cache-miss
+48 http cache https://registry.npmjs.org/express 30ms (cache hit)
+49 silly packumentCache full:https://registry.npmjs.org/express set size:804926 disposed:false
+50 silly fetch manifest limiter@^1.1.5
+51 silly packumentCache full:https://registry.npmjs.org/limiter cache-miss
+52 http cache https://registry.npmjs.org/split2 63ms (cache hit)
+53 silly packumentCache full:https://registry.npmjs.org/split2 set size:47438 disposed:false
+54 silly fetch manifest env-paths@^2.2.0
+55 silly packumentCache full:https://registry.npmjs.org/env-paths cache-miss
+56 http cache https://registry.npmjs.org/js-yaml 49ms (cache hit)
+57 silly packumentCache full:https://registry.npmjs.org/js-yaml set size:152232 disposed:false
+58 silly fetch manifest http-proxy@^1.18.0
+59 silly packumentCache full:https://registry.npmjs.org/http-proxy cache-miss
+60 http cache https://registry.npmjs.org/env-paths 14ms (cache hit)
+61 silly packumentCache full:https://registry.npmjs.org/env-paths set size:26913 disposed:false
+62 silly fetch manifest compression@^1.7.4
+63 silly packumentCache full:https://registry.npmjs.org/compression cache-miss
+64 http cache https://registry.npmjs.org/limiter 25ms (cache hit)
+65 silly packumentCache full:https://registry.npmjs.org/limiter set size:39581 disposed:false
+66 silly fetch manifest httpolyglot@^0.1.2
+67 silly packumentCache full:https://registry.npmjs.org/httpolyglot cache-miss
+68 http cache https://registry.npmjs.org/http-proxy 16ms (cache hit)
+69 silly packumentCache full:https://registry.npmjs.org/http-proxy set size:183156 disposed:false
+70 silly fetch manifest proxy-agent@^5.0.0
+71 silly packumentCache full:https://registry.npmjs.org/proxy-agent cache-miss
+72 http cache https://registry.npmjs.org/httpolyglot 15ms (cache hit)
+73 silly packumentCache full:https://registry.npmjs.org/httpolyglot set size:9989 disposed:false
+74 silly fetch manifest safe-buffer@^5.1.1
+75 silly packumentCache full:https://registry.npmjs.org/safe-buffer cache-miss
+76 http cache https://registry.npmjs.org/compression 19ms (cache hit)
+77 silly packumentCache full:https://registry.npmjs.org/compression set size:98424 disposed:false
+78 silly fetch manifest xdg-basedir@^4.0.0
+79 silly packumentCache full:https://registry.npmjs.org/xdg-basedir cache-miss
+80 http cache https://registry.npmjs.org/proxy-agent 19ms (cache hit)
+81 silly packumentCache full:https://registry.npmjs.org/proxy-agent set size:78600 disposed:false
+82 silly fetch manifest safe-compare@^1.1.4
+83 silly packumentCache full:https://registry.npmjs.org/safe-compare cache-miss
+84 http cache https://registry.npmjs.org/xdg-basedir 12ms (cache hit)
+85 silly packumentCache full:https://registry.npmjs.org/xdg-basedir set size:19771 disposed:false
+86 silly fetch manifest @coder/logger@1.1.16
+87 silly packumentCache full:https://registry.npmjs.org/@coder%2flogger cache-miss
+88 http cache https://registry.npmjs.org/safe-buffer 19ms (cache hit)
+89 silly packumentCache full:https://registry.npmjs.org/safe-buffer set size:41183 disposed:false
+90 silly fetch manifest cookie-parser@^1.4.5
+91 silly packumentCache full:https://registry.npmjs.org/cookie-parser cache-miss
+92 http cache https://registry.npmjs.org/safe-compare 14ms (cache hit)
+93 silly packumentCache full:https://registry.npmjs.org/safe-compare set size:22988 disposed:false
+94 silly fetch manifest rotating-file-stream@^3.0.0
+95 silly packumentCache full:https://registry.npmjs.org/rotating-file-stream cache-miss
+96 http cache https://registry.npmjs.org/@coder%2flogger 12ms (cache hit)
+97 silly packumentCache full:https://registry.npmjs.org/@coder%2flogger set size:54746 disposed:false
+98 http cache https://registry.npmjs.org/cookie-parser 15ms (cache hit)
+99 silly packumentCache full:https://registry.npmjs.org/cookie-parser set size:44731 disposed:false
+100 http cache https://registry.npmjs.org/rotating-file-stream 18ms (cache hit)
+101 silly packumentCache full:https://registry.npmjs.org/rotating-file-stream set size:225041 disposed:false
+102 silly reify moves {}
+103 http cache code-server@https://registry.npmjs.org/code-server/-/code-server-4.3.0.tgz 0ms (cache hit)
+104 http cache yarn@https://registry.yarnpkg.com/yarn/-/yarn-1.22.11.tgz 0ms (cache hit)
+105 http cache xdg-basedir@https://registry.yarnpkg.com/xdg-basedir/-/xdg-basedir-4.0.0.tgz 0ms (cache hit)
+106 http cache ws@https://registry.yarnpkg.com/ws/-/ws-8.2.0.tgz 1ms (cache hit)
+107 http cache semver@https://registry.yarnpkg.com/semver/-/semver-7.3.5.tgz 0ms (cache hit)
+108 http cache lru-cache@https://registry.yarnpkg.com/lru-cache/-/lru-cache-6.0.0.tgz 0ms (cache hit)
+109 http cache split2@https://registry.yarnpkg.com/split2/-/split2-4.1.0.tgz 0ms (cache hit)
+110 http cache safe-compare@https://registry.yarnpkg.com/safe-compare/-/safe-compare-1.1.4.tgz 0ms (cache hit)
+111 http cache safe-buffer@https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.1.tgz 0ms (cache hit)
+112 http cache rotating-file-stream@https://registry.yarnpkg.com/rotating-file-stream/-/rotating-file-stream-3.0.0.tgz 0ms (cache hit)
+113 http cache qs@https://registry.yarnpkg.com/qs/-/qs-6.10.3.tgz 0ms (cache hit)
+114 http cache proxy-agent@https://registry.yarnpkg.com/proxy-agent/-/proxy-agent-5.0.0.tgz 0ms (cache hit)
+115 http cache which@https://registry.yarnpkg.com/which/-/which-2.0.2.tgz 0ms (cache hit)
+116 http cache pem@https://registry.yarnpkg.com/pem/-/pem-1.14.4.tgz 0ms (cache hit)
+117 http cache limiter@https://registry.yarnpkg.com/limiter/-/limiter-1.1.5.tgz 0ms (cache hit)
+118 http cache js-yaml@https://registry.yarnpkg.com/js-yaml/-/js-yaml-4.1.0.tgz 0ms (cache hit)
+119 http cache httpolyglot@https://registry.yarnpkg.com/httpolyglot/-/httpolyglot-0.1.2.tgz 0ms (cache hit)
+120 http cache http-proxy@https://registry.yarnpkg.com/http-proxy/-/http-proxy-1.18.1.tgz 0ms (cache hit)
+121 http cache express@https://registry.yarnpkg.com/express/-/express-5.0.0-alpha.8.tgz 0ms (cache hit)
+122 http cache qs@https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz 0ms (cache hit)
+123 http cache debug@https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz 0ms (cache hit)
+124 http cache env-paths@https://registry.yarnpkg.com/env-paths/-/env-paths-2.2.1.tgz 0ms (cache hit)
+125 http cache cookie-parser@https://registry.yarnpkg.com/cookie-parser/-/cookie-parser-1.4.5.tgz 0ms (cache hit)
+126 http cache compression@https://registry.yarnpkg.com/compression/-/compression-1.7.4.tgz 0ms (cache hit)
+127 http cache debug@https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz 0ms (cache hit)
+128 http cache bytes@https://registry.yarnpkg.com/bytes/-/bytes-3.0.0.tgz 0ms (cache hit)
+129 http cache argon2@https://registry.yarnpkg.com/argon2/-/argon2-0.28.4.tgz 0ms (cache hit)
+130 http cache @coder/logger@https://registry.yarnpkg.com/@coder/logger/-/logger-1.1.16.tgz 0ms (cache hit)
+131 info run argon2@0.28.4 install node_modules/code-server/node_modules/argon2 node-gyp rebuild
+132 info run argon2@0.28.4 install { code: 1, signal: null }
+133 verbose stack Error: command failed
+133 verbose stack     at promiseSpawn (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/promise-spawn/lib/index.js:22:22)
+133 verbose stack     at spawnWithShell (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/promise-spawn/lib/index.js:124:10)
+133 verbose stack     at promiseSpawn (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/promise-spawn/lib/index.js:12:12)
+133 verbose stack     at runScriptPkg (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/run-script-pkg.js:79:13)
+133 verbose stack     at runScript (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/run-script.js:9:12)
+133 verbose stack     at /data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/rebuild.js:328:17
+133 verbose stack     at run (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/promise-call-limit/dist/commonjs/index.js:67:22)
+133 verbose stack     at /data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/promise-call-limit/dist/commonjs/index.js:84:9
+133 verbose stack     at new Promise (<anonymous>)
+133 verbose stack     at callLimit (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/promise-call-limit/dist/commonjs/index.js:35:69)
+134 verbose pkgid argon2@0.28.4
+135 error code 1
+136 error path /data/data/com.termux/files/usr/lib/node_modules/code-server/node_modules/argon2
+137 error command failed
+138 error command sh -c node-gyp rebuild
+139 error gyp info it worked if it ends with ok
+139 error gyp info using node-gyp@12.3.0
+139 error gyp info using node@24.14.1 | android | arm64
+139 error gyp info find Python using Python version 3.13.13 found at "/data/data/com.termux/files/usr/bin/python3"
+139 error gyp http GET https://nodejs.org/download/release/v24.14.1/node-v24.14.1-headers.tar.gz
+139 error gyp http 200 https://nodejs.org/download/release/v24.14.1/node-v24.14.1-headers.tar.gz
+139 error gyp http GET https://nodejs.org/download/release/v24.14.1/SHASUMS256.txt
+139 error gyp http 200 https://nodejs.org/download/release/v24.14.1/SHASUMS256.txt
+139 error gyp info spawn /data/data/com.termux/files/usr/bin/python3
+139 error gyp info spawn args [
+139 error gyp info spawn args '/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/node-gyp/gyp/gyp_main.py',
+139 error gyp info spawn args 'binding.gyp',
+139 error gyp info spawn args '-f',
+139 error gyp info spawn args 'make',
+139 error gyp info spawn args '-I',
+139 error gyp info spawn args '/data/data/com.termux/files/usr/lib/node_modules/code-server/node_modules/argon2/build/config.gypi',
+139 error gyp info spawn args '-I',
+139 error gyp info spawn args '/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/node-gyp/addon.gypi',
+139 error gyp info spawn args '-I',
+139 error gyp info spawn args '/data/data/com.termux/files/home/.cache/node-gyp/24.14.1/include/node/common.gypi',
+139 error gyp info spawn args '-Dlibrary=shared_library',
+139 error gyp info spawn args '-Dvisibility=default',
+139 error gyp info spawn args '-Dnode_root_dir=/data/data/com.termux/files/home/.cache/node-gyp/24.14.1',
+139 error gyp info spawn args '-Dnode_gyp_dir=/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/node-gyp',
+139 error gyp info spawn args '-Dnode_lib_file=/data/data/com.termux/files/home/.cache/node-gyp/24.14.1/<(target_arch)/node.lib',
+139 error gyp info spawn args '-Dmodule_root_dir=/data/data/com.termux/files/usr/lib/node_modules/code-server/node_modules/argon2',
+139 error gyp info spawn args '-Dnode_engine=v8',
+139 error gyp info spawn args '--depth=.',
+139 error gyp info spawn args '--no-parallel',
+139 error gyp info spawn args '--generator-output',
+139 error gyp info spawn args 'build',
+139 error gyp info spawn args '-Goutput_dir=.'
+139 error gyp info spawn args ]
+139 error gyp: Undefined variable android_ndk_path in binding.gyp while trying to load binding.gyp
+139 error gyp ERR! configure error 
+139 error gyp ERR! stack Error: `gyp` failed with exit code: 1
+139 error gyp ERR! stack at ChildProcess.<anonymous> (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/node-gyp/lib/configure.js:317:18)
+139 error gyp ERR! stack at ChildProcess.emit (node:events:508:28)
+139 error gyp ERR! stack at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+139 error gyp ERR! System Linux 6.6.89-android15-8-g8e4be6b47e40-ab14134548-4k
+139 error gyp ERR! command "/data/data/com.termux/files/usr/bin/node" "/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+139 error gyp ERR! cwd /data/data/com.termux/files/usr/lib/node_modules/code-server/node_modules/argon2
+139 error gyp ERR! node -v v24.14.1
+139 error gyp ERR! node-gyp -v v12.3.0
+139 error gyp ERR! $npm_package_name argon2
+139 error gyp ERR! $npm_package_version 0.28.4
+139 error gyp ERR! not ok
+140 silly unfinished npm timer reify 1779029076082
+141 silly unfinished npm timer reify:build 1779029081199
+142 silly unfinished npm timer build 1779029081200
+143 silly unfinished npm timer build:deps 1779029081200
+144 silly unfinished npm timer build:run:install 1779029081208
+145 silly unfinished npm timer build:run:install:node_modules/code-server/node_modules/argon2 1779029081209
+146 verbose cwd /data/data/com.termux/files/home
+147 verbose os Linux 6.6.89-android15-8-g8e4be6b47e40-ab14134548-4k
+148 verbose node v24.14.1
+149 verbose npm  v11.14.1
+150 verbose exit 1
+151 verbose code 1
+152 error A complete log of this run can be found in: /data/data/com.termux/files/home/.npm/_logs/2026-05-17T14_44_35_519Z-debug-0.log
