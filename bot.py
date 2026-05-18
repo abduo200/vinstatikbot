@@ -4,7 +4,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
 
 TOKEN = "8691344282:AAGM2VykrOhl48bpH48qgZ2Y1y4_QwNDUxw"
-DOWNLOAD_DIR = "/app/downloads"
+DOWNLOAD_DIR = os.path.expanduser("~/downloads")
 os.makedirs(DOWNLOAD_DIR, exist_ok=True)
 user_urls = {}
 
